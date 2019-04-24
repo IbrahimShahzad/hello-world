@@ -1,3 +1,3 @@
-This is a not a test boii.
+This is a good test boii.
 
 Yeah it is.
