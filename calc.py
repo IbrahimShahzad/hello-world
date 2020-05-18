@@ -10,9 +10,13 @@ def pow(x,y):
   for _ in range(y):
     res *= x
 
-""" Divides number x by number y"""
+def multiply (x, y):
+  """ Returns the multiple of x and y """
+  return x*y
+
 def divide(x,y):
-    if (y == 0):
+  """ Divides number x by number y"""
+  if (y == 0):
         if(x == 0):
             print("Result is undefined")
         else:
@@ -33,7 +37,7 @@ if __name__ == '__main__':
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
-    print("5. Square Root")
+    print("5. Power")
     print("6. Area of Circle")
     option = int(input("Enter index of function, you want to calculate: "))
        
@@ -42,14 +46,18 @@ if __name__ == '__main__':
         add(x,y)
     #elif (option == 2):
         # subtract
-    #elif (option == 3):
-        # multiply
+    elif (option == 3):
+        x,y = input_num()
+        multiply(x,y)
     elif (option == 4):
         x,y  = input_num()
         divide(x,y)
-    #elif (option == 5):
-        # square root
+    elif (option == 5):
+        x,y = input_num()
+        pow(x,y)
     #elif (option == 6):
         # area of circle
     else:
         print("Invalid input")
+
+
