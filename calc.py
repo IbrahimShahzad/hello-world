@@ -10,7 +10,10 @@ def pow(x,y):
   for _ in range(y):
     res *= x
     
-def subtract(x,y):
+ def subtract(x,y):
   """ Returns difference of function x and y """  
-  return x - y    
-
+  return x - y 
+    
+  def multiply (x, y):
+  """ Returns the multiple of x and y """
+  return x*y
