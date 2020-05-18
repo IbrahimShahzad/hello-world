@@ -9,3 +9,8 @@ def pow(x,y):
   res = 1 
   for _ in range(y):
     res *= x
+    
+def subtract(x,y):
+  """ Returns difference of function x and y """  
+  return x - y    
+
